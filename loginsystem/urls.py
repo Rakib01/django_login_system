@@ -18,17 +18,19 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
+from accounts.views import  SignUpView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include("accounts.urls")),
 
-    #blog urls -----
-    #path('', include('blog.urls', namespace='blog')),
 
     # auth urls -----
 
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
     path('accounts/logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('accounts/signup/', SignUpView.as_view(), name='signup'),
+    path("accounts/", include("allauth.urls")),
 ]
 
 
