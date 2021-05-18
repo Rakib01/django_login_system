@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap");
 
 
+
 .box {
   position: relative;
   width: 100%;
@@ -102,83 +103,12 @@
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6, .theme-dark .h1, .theme-dark .h2, .theme-dark .h3, .theme-dark .h4, .theme-dark .h5, .theme-dark .h6 {
   color: #fff !important;
 }
-
 .bg-facebook {
   background-color: #0d66ff !important;
 }
-
-.bg-messenger {
-  background-color: #55acee !important;
+.bg-github{
+  background-color: #333 !important;
 }
-
-.bg-twiiter {
-  background-color: #3b5999 !important;
-}
-
-.bg-linkedin {
-  background-color: #0077B5 !important;
-}
-
-.bg-skype {
-  background-color: #00AFF0 !important;
-}
-
-.bg-pinterest {
-  background-color: #bd081c !important;
-}
-
-.bg-instagram {
-  background-color: #e4405f !important;
-}
-
-.bg-flicker {
-  background-color: #ff0084 !important;
-}
-
-.bg-whatsup {
-  background-color: #25D366 !important;
-}
-
-.bg-tumblr {
-  background-color: #34465d !important;
-}
-
-.bg-youtube {
-  background-color: #cd201f !important;
-}
-
-.bg-black {
-  background-color: #000;
-}
-
-.text-facebook {
-  color: #0d66ff !important;
-}
-
-.text-messenger {
-  color: #55acee !important;
-}
-
-.text-twiiter {
-  color: #3b5999 !important;
-}
-
-.text-linkedin {
-  color: #0077B5 !important;
-}
-
-.text-skype {
-  color: #00AFF0 !important;
-}
-
-.text-pinterest {
-  color: #bd081c !important;
-}
-
-.text-instagram {
-  color: #e4405f !important;
-}
-
 .text-current {
   color: var(--theme-color) !important;
 }
@@ -993,7 +923,7 @@
 }
 
 .font-sm {
-  font-size: 20px !important;
+  font-size: 18px !important;
 }
 
 .font-md {
@@ -3662,7 +3592,7 @@ progress {
   }
 }
 .form-control[type=file] {
-  overflow: hidden;
+  
 }
 .form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
@@ -12231,10 +12161,7 @@ textarea.form-control-lg {
 body {
   line-height: 1.75;
 }
-body.fixed {
-  overflow: hidden;
-  position: fixed;
-}
+
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
@@ -14649,8 +14576,8 @@ body:not(.theme-full) .main-content .middle-sidebar-bottom.header-padding {
   border-radius: 7px;
 }
 .form-group .style2-input {
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   display: block;
   border: 2px #eee solid;
   border-radius: 7px;
@@ -15831,9 +15758,7 @@ select.sort {
   font-weight: 600 !important;
 }
 
-.hover-card .card-image {
-  overflow: hidden;
-}
+
 .hover-card .card-image img {
   transition: all 0.4s ease !important;
   position: relative;

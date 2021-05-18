@@ -57,9 +57,30 @@
     <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
+ <br>
 {% if user.is_authenticated %}
-  Hi {{ user.get_full_name }}!
+<div class="card text-center">
+  <div class="card-header">
+    Quote
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>Welcome on board {{ user.get_full_name }}! </p>
+      <footer class="blockquote-footer">You are successfully logged in</footer>
+    </blockquote>
+  </div>
+</div>
 {% else %}
-  <p>You are not logged in</p>
+<div class="card text-center">
+  <div class="card-header">
+    Quote
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>You are not logged in</p>
+
+    </blockquote>
+  </div>
+</div>
 {% endif %}
 {% endblock %}

@@ -389,3 +389,19 @@ $(document).ready(function() {
     
 
 });
+
+
+
+
+
+function PageScroll() {
+   $(".scroll-tiger").on("click", function(e) {
+        var $anchor = $(this);
+        $("html, body").stop().animate({
+            scrollTop: $($anchor.attr("href")).offset().top - 0
+        }, 1500, 'easeInOutExpo');
+        $('.overlay-section').removeClass('active'); 
+        e.preventDefault();
+
+    });
+}

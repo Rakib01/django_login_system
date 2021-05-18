@@ -29,8 +29,8 @@
                             <input type="checkbox" class="form-check-input mt-2" id="exampleCheck5">
                             <label class="form-check-label font-xsss text-grey-500" for="exampleCheck5">Remember
                                 me</label>
-                            <a href="forgot.html" class="fw-600 font-xsss text-grey-700 mt-1 float-right">Forgot your
-                                Password?</a>
+                            <!-- <a href="forgot.html" class="fw-600 font-xsss text-grey-700 mt-1 float-right">Forgot your
+                                Password?</a> -->
                         </div>
                         <div>
                             <button id='submit'
@@ -41,20 +41,20 @@
 
                     <div class="col-sm-12 p-0 text-left">
                         <h6 class="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">Dont have account <a
-                                href="{% url 'signup' %}" class="fw-700 ms-1">Register</a></h6>
+                                href="{% url 'signup' %}" class="fw-700 ms-1" >Register</a></h6>
                     </div>
                     <div class="col-sm-12 p-0 text-center mt-2">
 
                         <h6 class="mb-0 d-inline-block bg-white fw-500 font-xsss text-grey-500 mb-3">Or, Sign in with
                             your social account </h6>
                         <div class="form-group mb-1"> <a href="{% provider_login_url 'github' %}"
-                                class="btn btn-secondary">
+                            class="form-control text-left style2-input text-white fw-600 bg-github border-0 p-0 "><img src="images/icon-3.png" alt="icon" class="ms-2 w40 mb-1 me-5">
                                 <i class="fa fa-github fa-fw"></i>
                                 <span>Login with GitHub</span>
                             </a></div>
-                        <div class="form-group mb-1">
+                        <div class="form-group mb-1 ">
 
-                            <a href="{% provider_login_url 'facebook' %}" class="btn btn-secondary">
+                            <a href="{% provider_login_url 'facebook' %}"  class="form-control text-left style2-input text-white fw-600 bg-facebook border-0 p-0 "><img src="images/icon-3.png" alt="icon" class="ms-2 w40 mb-1 me-5">
 
                                 <span>Login with Facebook</span>
                             </a>
@@ -65,6 +65,7 @@
         </div>
     </div>
 </div>
+
 
 
 {% endblock body %}
